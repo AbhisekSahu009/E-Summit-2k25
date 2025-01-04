@@ -19,8 +19,178 @@ html, body {
 /*        align-items: center;*/
 /*}*/
 
-  .home{
+
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure the navbar stays on top */
+}
+
+
+#navbar::before {
+    content: "";
+    background-color: #212529;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav li{
+    height: 75px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav a:hover{
+
+    text-decoration: wavy;
+    color: #FF9900;
+    cursor: pointer;
+    transform: scale(1.15);
+
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+nav:hover ~ .bulb {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    z-index: 999;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.sidebar li{
+    width: 100%;
+
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width:870px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+
+}
+
+@media(max-width:470px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* Animations */
+
+
+/* Fade-in-right animation */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;               /* Start transparent */
+        transform: translateX(0px); /* Start slightly to the right */
+    }
+    100% {
+        opacity: 1;               /* Fully visible */
+        transform: translateX(20px); /* End at original position */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home{
       background: url("images/bkg.svg");
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-content: center;
   }
 
     .container {
