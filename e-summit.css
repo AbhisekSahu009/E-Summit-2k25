@@ -96,3 +96,111 @@ html, body {
             width: 150px; /* Adjust button size */
         }
     }
+
+    h1 {
+        margin: 20px 0;
+        font-size: 3rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    .page{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 25px;
+        padding-right:25px;
+    }
+
+    p {
+        margin: 0 0 30px;
+        color: #aaa;
+        font-size: 1.27rem;
+    }
+
+    /* Profile Container */
+    .profile-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        column-gap: 130px; /* Space between cards */
+        row-gap: 0px;
+        padding: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Profile Card */
+    .profile-card {
+        display: flex;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        height: 400px;
+        position: relative;
+    }
+
+    .profile-card:nth-child(2n) {
+        margin-top: 110px;
+    }
+
+    .profile-card:hover {
+        transform: scale(1.25);
+    }
+
+    /* Profile Image */
+    .profile-image {
+        position: relative;
+        width: 270px;
+        height: 380px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s;
+    }
+
+    .profile-image .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    .profile-card:hover .hover-img {
+        opacity: 1;
+    }
+
+    /* Profile Info */
+    .profile-info {
+        text-align: left;
+        margin-left: 20px;
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+    .profile-info h2 {
+        margin: 0;
+        font-family: Arial Narrow Bold, sans-serif;
+        font-size: 1.5rem;
+        color: #feffff;
+
+    }
+
+    .profile-info h3 {
+        margin: 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+        margin: 10px 0;
+        padding-left: 40px;
+    }
