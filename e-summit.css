@@ -426,8 +426,8 @@ nav:hover ~ .bulb {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 1200px;
     padding: 20px;
     margin: 100px 0px;
 }
@@ -547,7 +547,7 @@ nav:hover ~ .bulb {
 
 .container1 {
     opacity:0.90;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     column-gap: 50px;
     text-align: center;
@@ -564,6 +564,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin: 65px 0;
+    row-gap: 200px;
 }
 
 .card {
@@ -603,7 +604,7 @@ h1 {
 
 p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.85rem;
     line-height: 1.6;
     text-align: left;
 }
