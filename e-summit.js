@@ -1,32 +1,3 @@
-
-document.getElementById('showSidebarButton').addEventListener('click', showSidebar);
-document.getElementById('hideSidebarButton').addEventListener('click', hideSidebar);
-
-function showSidebar(event) {
-    event.preventDefault(); // Prevent default action
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
-}
-
-function hideSidebar(event) {
-    event.preventDefault(); // Prevent default action
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const eventGallery = document.createElement("div");
     eventGallery.classList.add("event-gallery");
@@ -45,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollImages.classList.add("scroll-images");
 
     const images = [
-        "img.jpg", "img.jpg", "img.jpg", "img.jpg",
-        "img.jpg", "img.jpg", "img.jpg", "img.jpg"
+        "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg",
+        "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg"
     ];
 
     images.forEach((src) => {
@@ -62,11 +33,17 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollImages.appendChild(child);
     });
 
+    // Duplicate images for seamless scrolling
+    const duplicateScrollImages = scrollImages.cloneNode(true);
+    scrollImages.classList.add("scroll-images");
+    duplicateScrollImages.classList.add("scroll-images");
+
     cover.appendChild(scrollImages);
+    cover.appendChild(duplicateScrollImages);
+
     mainScrollDiv.appendChild(cover);
     eventGallery.appendChild(eventGalleryHeading);
     eventGallery.appendChild(mainScrollDiv);
 
     document.getElementById("eventGallery").appendChild(eventGallery);
 });
-
