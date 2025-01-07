@@ -149,7 +149,7 @@ nav:hover ~ .bulb {
 /*Home*/
 
 .home {
-    background-image: url("images/bkgl.svg");
+    background-image: url("images/bkgd.jpg");
     background-size: cover; /* Scales the image to cover the entire area */
     display: flex;
     flex-direction: column;
@@ -212,8 +212,7 @@ nav:hover ~ .bulb {
     }
 
     @media (max-width: 768px) {
-        .home {
-        }
+
 
         .e-summit-logo img {
             width: 250px;
@@ -525,14 +524,14 @@ h1 {
     background: white;
     color: black;
     border-radius: 10px;
-    width: 450px;
+    width: 550px;
     height:250px;
     padding: 10px;
     align-items: center;
 }
 
 .image-container {
-    width: 820px;
+    width: 1800px;
     height: 250px;
     overflow: hidden;
     border-radius: 10px;
@@ -785,6 +784,7 @@ p {
     width: 400px;
     height: 300px;
     margin: 10px;
+    margin-right: 70px;
 }
 .child-img {
     width: 100%;
