@@ -171,7 +171,7 @@ nav:hover ~ .bulb {
     }
 
     .e-summit-logo{
-        margin-top: 500px;
+        margin-top: 20%;
     }
     .e-summit-logo img {
 
@@ -199,6 +199,13 @@ nav:hover ~ .bulb {
         border-radius: 10px;
         cursor: pointer;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+    }
+
+    .btn:hover{
+        background-color: #7924cd;
+        color: white;
+        text-decoration: none;
     }
     #btn1{
         width:250px;
@@ -229,6 +236,12 @@ nav:hover ~ .bulb {
         }
     }
 
+
+    @media(max-width:650px){
+        .home{
+            height: 100%;
+        }
+    }
 
 
 
@@ -557,7 +570,8 @@ h1 {
 }
 
 .image-container:hover  {
-    transform: translateZ(5px) rotateZ(10deg);  transition:transform 0.5s;
+    transform: translateZ(5px) rotateZ(10deg) scale(1.2);
+    transition:transform 0.5s;
     cursor:pointer;
 }
 

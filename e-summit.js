@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollImages.classList.add("scroll-images");
 
     const images = [
-        "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg",
+        "images/img1.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg",
         "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg", "images/innothon_logo.jpg"
     ];
 
